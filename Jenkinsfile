@@ -6,5 +6,10 @@ pipeline {
         sh 'ls -l'
       }
     }
+    stage('Test') {
+      steps {
+        sh 'ls -l'
+      }
+    }
   }
 }

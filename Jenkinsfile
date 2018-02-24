@@ -11,5 +11,16 @@ pipeline {
         sh 'ls -l'
       }
     }
+    stage('Staging') {
+      steps {
+        input 'Deploy?'
+        sh 'ls -l'
+      }
+    }
+    stage('Production') {
+      steps {
+        input 'Deploy?'
+      }
+    }
   }
 }
